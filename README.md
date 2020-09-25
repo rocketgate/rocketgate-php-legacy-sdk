@@ -1,3 +1,12 @@
+![rocketgate-php-sdk](http://rocketgate.com/images/logo_rocketgate.png)
+
+Rocketgate Gateway PHP Legacy (Pre PHP 5.7) SDK
+===========
+
+This library is __compatible__ with PHP 5.6, although we highly recommend
+to migrate your project to PHP 7.2 or greater to avoid security breaches 
+(refer to PHP Supported Versions [here](https://www.php.net/supported-versions.php)).
+
 Documentation is available in RocketGate's helpdesk at https://help.rocketgate.com/support/solutions/28000015702
 
 Docs related to this zip file are located at:
