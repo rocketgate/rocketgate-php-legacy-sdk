@@ -178,6 +178,7 @@ class GatewayResponse extends GatewayParameterList {
   static function RESPONSE_CODE() { return "responseCode"; }
   static function ROCKETPAY_INDICATOR() { return "rocketPayIndicator"; }
   static function TRANSACT_ID() { return "guidNo"; }
+  static function TRANSACTION_TIME() { return "transactionTime"; }
   static function SCRUB_RESULTS() { return "scrubResults"; }
   static function SETTLED_AMOUNT() { return "approvedAmount"; }
   static function SETTLED_CURRENCY() { return "approvedCurrency"; }
