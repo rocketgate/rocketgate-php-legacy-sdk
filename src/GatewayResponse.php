@@ -117,7 +117,7 @@ class GatewayResponse extends GatewayParameterList {
   static function _3DSECURE_DEVICE_COLLECTION_JWT() { return "_3DSECURE_DEVICE_COLLECTION_JWT"; }
   static function _3DSECURE_DEVICE_COLLECTION_URL() { return "_3DSECURE_DEVICE_COLLECTION_URL"; }
   static function _3DSECURE_STEP_UP_URL() { return "_3DSECURE_STEP_UP_URL"; }
-  static function _3DSECURE_STEPUP_JWT() { return "_3DSECURE_STEPUP_JWT"; }
+  static function _3DSECURE_STEP_UP_JWT() { return "_3DSECURE_STEP_UP_JWT"; }
   static function _3DSECURE_VERSION() { return "_3DSECURE_VERSION"; }
   static function VERSION_INDICATOR() { return "version"; }
   static function ACS_URL() { return "acsURL"; }
