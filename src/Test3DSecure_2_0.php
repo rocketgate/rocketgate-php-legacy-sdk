@@ -133,7 +133,7 @@ if ($service->PerformPurchase($request, $response)) {
   print "  PAREQ: " .  $response->Get(GatewayResponse::PAREQ()) . "\n";
   print "  ACS URL: " .  $response->Get(GatewayResponse::ACS_URL()) . "\n";
   print "  STEP-UP URL: " .  $response->Get(GatewayResponse::_3DSECURE_STEP_UP_URL()) . "\n";
-  print "  STEP-UP JWT: " .  $response->Get(GatewayResponse::_3DSECURE_STEPUP_JWT()) . "\n\n";
+  print "  STEP-UP JWT: " .  $response->Get(GatewayResponse::_3DSECURE_STEP_UP_JWT()) . "\n\n";
 
   //
   //	Setup the 3rd request.
