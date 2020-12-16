@@ -182,6 +182,7 @@ class GatewayResponse extends GatewayParameterList {
   static function SCRUB_RESULTS() { return "scrubResults"; }
   static function SETTLED_AMOUNT() { return "approvedAmount"; }
   static function SETTLED_CURRENCY() { return "approvedCurrency"; }
+  static function RETRIEVAL_ID() { return "retrievalNo"; }	
 }
 
 ?>
