@@ -114,6 +114,9 @@ define("GatewayCodes__REASON_TRIAL_ABUSE", 222);
 define("GatewayCodes__REASON_3DSECURE_BYPASS", 223);
 define("GatewayCodes__REASON_NEWCARD_NODEVICE", 224);
 define("GatewayCodes__REASON_3DSECURE_INITIATION", 225);
+define("GatewayCodes__REASON_3DSECURE_FRICTIONLESS_FAILED_AUTH", 227);
+define("GatewayCodes__REASON_3DSECURE_SCA_REQUIRED", 228);
+
 
 define("GatewayCodes__REASON_DNS_FAILURE", 300);
 define("GatewayCodes__REASON_UNABLE_TO_CONNECT", 301);
