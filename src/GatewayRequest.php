@@ -201,6 +201,16 @@ class GatewayRequest extends GatewayParameterList {
   static function _3DSECURE_DS_TRANSACTION_ID() { return "_3DSECURE_DS_TRANSACTION_ID"; }
   static function _3DSECURE_ACS_TRANSACTION_ID() { return "_3DSECURE_ACS_TRANSACTION_ID"; }
 
+  /*
+  Whether or not to request a challenge step-up flow from the ACS
+  01 - No preference
+  02 - No challenge requested
+  03 - Challenge requested (3DS Requestor Preference)
+  04 - Challenge requested (Mandate)
+  */
+  static function _3DSECURE_CHALLENGE_MANDATED_INDICATOR(){ return "_3DSECURE_CHALLENGE_MANDATED_INDICATOR"; }
+  
+
   static function FAILED_SERVER() { return "failedServer"; }
   static function FAILED_GUID() { return "failedGUID"; }
   static function FAILED_RESPONSE_CODE() { return "failedResponseCode"; }
