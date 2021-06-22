@@ -124,6 +124,11 @@ class GatewayRequest extends GatewayParameterList {
   static function BILLING_ZIPCODE() { return "billingZipCode"; }
   static function BROWSER_USER_AGENT() { return "browserUserAgent"; }
   static function BROWSER_ACCEPT_HEADER() { return "browserAcceptHeader"; }
+  static function BROWSER_JAVA_ENABLED() { return "BrowserJavaEnabled"; }
+  static function BROWSER_LANGUAGE() { return "BrowserLanguage"; }
+  static function BROWSER_COLOR_DEPTH() { return "BrowserColorDepth"; }
+  static function BROWSER_SCREEN_HEIGHT() { return "BrowserScreenHeight"; }
+  static function BROWSER_SCREEN_WIDTH() { return "BrowserScreenWidth"; }
   static function CAPTURE_DAYS() { return "captureDays"; }
   static function CARDNO() { return "cardNo"; }
   static function CARD_HASH() { return "cardHash"; }
