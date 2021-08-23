@@ -8,7 +8,7 @@
 //
 class GatewayChecksum {
   public static $checksum = "";
-  public static $baseChecksum = "4eb9672664dac17a4f59a7d92230b62f";
+  public static $baseChecksum = "54b8d2e6fb2fd909b4c2e93b886b1705";
   public static $versionNo = "P6.15";  //
 
 //////////////////////////////////////////////////////////////////////
