@@ -170,6 +170,9 @@ class GatewayResponse extends GatewayParameterList {
   static function MERCHANT_SITE_ID() { return "merchantSiteID"; }
   static function PAREQ() { return "PAREQ"; }
   static function REASON_CODE() { return "reasonCode"; }
+  static function REASON_CODE_NAME() { return "reasonCodeName"; }
+  static function MERCHANT_REASON_CODE_DESCRIPTION() { return "merchantReasonCodeDescription"; }
+  static function CARDHOLDER_REASON_CODE_DESCRIPTION() { return "cardholderReasonCodeDescription"; }
   static function REBILL_AMOUNT() { return "rebillAmount"; }
   static function REBILL_DATE() { return "rebillDate"; }
   static function REBILL_END_DATE() { return "rebillEndDate"; }

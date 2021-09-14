@@ -703,6 +703,9 @@ class GatewayService {
       $response->Set(GatewayResponse::EXCEPTION(), "curl_init() error");
       $response->SetResults(GatewayCodes__RESPONSE_REQUEST_ERROR,
 			    GatewayCodes__REASON_INVALID_URL);
+      $response->Set(GatewayResponse::REASON_CODE_NAME(), 'REASON_INVALID_URL');
+      $response->Set(GatewayResponse::MERCHANT_REASON_CODE_DESCRIPTION(), 'Invalid URL');
+      $response->Set(GatewayResponse::CARDHOLDER_REASON_CODE_DESCRIPTION(), 'Invalid URL');
       return GatewayCodes__RESPONSE_REQUEST_ERROR;
     }
 
@@ -790,17 +793,29 @@ class GatewayService {
         case CURLE_SSL_CONNECT_ERROR:		// Connection failures
 	case CURLE_COULDNT_CONNECT:
           $internalCode = GatewayCodes__REASON_UNABLE_TO_CONNECT;
+          $internalCodeName = 'REASON_UNABLE_TO_CONNECT';
+          $internalMerchantCodeDescription = 'Unable to Connect';
+          $internalCardholderCodeDescription = 'Unable to Connect';
 	  break;				// Done with request
         case CURLE_SEND_ERROR:			// Failed sending data
           $internalCode = GatewayCodes__REASON_REQUEST_XMIT_ERROR;
+          $internalCodeName = 'REASON_REQUEST_XMIT_ERROR';
+          $internalMerchantCodeDescription = 'Transmit Error';
+          $internalCardholderCodeDescription = 'Transmit Error';
 	  break;				// Done with request
         case CURLE_OPERATION_TIMEOUTED:		// Time-out reached
           $internalCode = GatewayCodes__REASON_RESPONSE_READ_TIMEOUT;
+          $internalCodeName = 'REASON_RESPONSE_READ_TIMEOUT';
+          $internalMerchantCodeDescription = 'Read Timeout';
+          $internalCardholderCodeDescription = 'Read Timeout';
 	  break;				// Done with request
         case CURLE_RECV_ERROR:			// Failed reading data
         case CURLE_READ_ERROR:
         default:
-	  $internalCode = GatewayCodes__REASON_RESPONSE_READ_ERROR;
+          $internalCode = GatewayCodes__REASON_RESPONSE_READ_ERROR;
+          $internalCodeName = 'REASON_RESPONSE_READ_ERROR';
+          $internalMerchantCodeDescription = 'Read Error';
+          $internalCardholderCodeDescription = 'Read Error';
       }
 
 //
@@ -810,6 +825,9 @@ class GatewayService {
         $response->Set(GatewayResponse::EXCEPTION(), $errorString);
       $response->SetResults(GatewayCodes__RESPONSE_SYSTEM_ERROR,
 			    $internalCode);
+      $response->Set(GatewayResponse::REASON_CODE_NAME(), $internalCodeName);
+      $response->Set(GatewayResponse::MERCHANT_REASON_CODE_DESCRIPTION(), $internalMerchantCodeDescription);
+      $response->Set(GatewayResponse::CARDHOLDER_REASON_CODE_DESCRIPTION(), $internalCardholderCodeDescription);
       return GatewayCodes__RESPONSE_SYSTEM_ERROR;
     }
 
