@@ -188,6 +188,7 @@ class GatewayResponse extends GatewayParameterList {
   static function RETRIEVAL_ID() { return "retrievalNo"; }
   static function SCHEME_TRANSACTION_ID() { return "schemeTransactionID"; }
   static function SCHEME_SETTLEMENT_DATE() { return "schemeSettlementDate"; }
+  static function PAYMENT_LINK_URL() { return "PAYMENT_LINK_URL"; }
 }
 
 ?>
