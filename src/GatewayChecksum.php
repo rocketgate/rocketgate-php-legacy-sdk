@@ -26,7 +26,6 @@ class GatewayChecksum {
 		  md5_file($dirName . "/GatewayParameterList.php") .
 		  md5_file($dirName . "/GatewayCodes.php");
     GatewayChecksum::$checksum = md5($baseString);
-    print "checksum: " . GatewayChecksum::$checksum . "\n";
     if (GatewayChecksum::$checksum != GatewayChecksum::$baseChecksum)
       GatewayChecksum::$versionNo = "P6.17m";
   }
