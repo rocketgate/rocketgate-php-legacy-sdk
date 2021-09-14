@@ -87,6 +87,7 @@ define("GatewayCodes__REASON_AUTH_HAS_EXPIRED", 160);
 define("GatewayCodes__REASON_PREVIOUS_HARD_DECLINE", 161);
 define("GatewayCodes__REASON_MERCHACCT_LIMIT", 162);
 define("GatewayCodes__REASON_DECLINED_CAVV_AUTOVOID", 163);
+define("GatewayCodes__REASON_BANK_INVALID_TRANSACTION", 165);
 
 define("GatewayCodes__REASON_RISK_FAIL", 200);
 define("GatewayCodes__REASON_CUSTOMER_BLOCKED", 201);
