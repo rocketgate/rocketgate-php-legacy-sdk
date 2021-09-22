@@ -240,6 +240,10 @@ class GatewayRequest extends GatewayParameterList {
   static function GATEWAY_URL() { return "gatewayURL"; }
   static function GATEWAY_CONNECT_TIMEOUT() { return "gatewayConnectTimeout"; }
   static function GATEWAY_READ_TIMEOUT() { return "gatewayReadTimeout"; }
+
+  static function FAILURE_URL() { return "FAILUREURL"; }
+  static function SUCCESS_URL() { return "SUCCESSURL"; }
+
 }
 
 ?>
