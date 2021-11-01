@@ -165,6 +165,7 @@ class GatewayRequest extends GatewayParameterList {
   static function PARTIAL_AUTH_FLAG() { return "partialAuthFlag"; }
   static function PAYINFO_TRANSACT_ID() { return "payInfoTransactID"; }
   static function PREFERRED_MERCHANT_ACCOUNT() { return "preferredMerchantAccount"; }  // cdltorre
+  static function PROCESSOR_3DS() { return "PROCESSOR3DS"; }
   static function REBILL_FREQUENCY() { return "rebillFrequency"; }
   static function REBILL_AMOUNT() { return "rebillAmount"; }
   static function REBILL_START() { return "rebillStart"; }
