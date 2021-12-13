@@ -245,6 +245,8 @@ class GatewayRequest extends GatewayParameterList {
   static function FAILURE_URL() { return "FAILUREURL"; }
   static function SUCCESS_URL() { return "SUCCESSURL"; }
 
+  static function MERCHANT_CASCADED_AUTH() { return "MERCHANTCASCADEDAUTH"; }
+
 }
 
 ?>
