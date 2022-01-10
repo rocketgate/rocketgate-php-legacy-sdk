@@ -86,7 +86,7 @@ class GatewayResponse extends GatewayParameterList {
     if (xml_parse_into_struct($parser, $xmlString, $vals, $index) == 0) {
       $this->Set(GatewayResponse::EXCEPTION(),
 		 xml_error_string(xml_get_error_code($parser)));
-      $this->SetResults(GatewayCodes__RESPONSE_SYSTEM_ERROR,
+      $this->SetResults(GatewayCodes__RESPONSE_REQUEST_ERROR,
 			GatewayCodes__REASON_XML_ERROR);
       xml_parser_free($parser);			// Release the parser
       return;					// And we're done
