@@ -275,7 +275,7 @@ class GatewayService {
 //
 //////////////////////////////////////////////////////////////////////
 //	
-  function BuildPaymentLink($request, $response): bool
+  function BuildPaymentLink($request, $response)
   {
     $request->Set("gatewayServlet", "/hostedpage/servlet/BuildPaymentLinkSubmit");
     $this->PerformTransaction($request, $response);
