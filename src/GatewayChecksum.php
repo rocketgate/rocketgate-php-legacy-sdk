@@ -8,8 +8,8 @@
 //
 class GatewayChecksum {
   public static $checksum = "";
-  public static $baseChecksum = "dae5f43449fba05aaa26005f4cb9df87";
-  public static $versionNo = "P6.24";  //
+  public static $baseChecksum = "ba325b17a7e873af4f4aa0f8c29a42dd";
+  public static $versionNo = "P6.25";  //
 
 //////////////////////////////////////////////////////////////////////
 //
@@ -27,7 +27,7 @@ class GatewayChecksum {
 		  md5_file($dirName . "/GatewayCodes.php");
     GatewayChecksum::$checksum = md5($baseString);
     if (GatewayChecksum::$checksum != GatewayChecksum::$baseChecksum)
-      GatewayChecksum::$versionNo = "P6.24m";
+      GatewayChecksum::$versionNo = "P6.25m";
   }
 }
 
