@@ -124,6 +124,11 @@ class GatewayRequest extends GatewayParameterList {
   static function BILLING_ZIPCODE() { return "billingZipCode"; }
   static function BROWSER_USER_AGENT() { return "browserUserAgent"; }
   static function BROWSER_ACCEPT_HEADER() { return "browserAcceptHeader"; }
+  static function BROWSER_JAVA_ENABLED() { return "BrowserJavaEnabled"; }
+  static function BROWSER_LANGUAGE() { return "BrowserLanguage"; }
+  static function BROWSER_COLOR_DEPTH() { return "BrowserColorDepth"; }
+  static function BROWSER_SCREEN_HEIGHT() { return "BrowserScreenHeight"; }
+  static function BROWSER_SCREEN_WIDTH() { return "BrowserScreenWidth"; }
   static function CAPTURE_DAYS() { return "captureDays"; }
   static function CARDNO() { return "cardNo"; }
   static function CARD_HASH() { return "cardHash"; }
@@ -159,7 +164,8 @@ class GatewayRequest extends GatewayParameterList {
   static function PARES() { return "PARES"; }
   static function PARTIAL_AUTH_FLAG() { return "partialAuthFlag"; }
   static function PAYINFO_TRANSACT_ID() { return "payInfoTransactID"; }
-  static function PREFERRED_MERCHANT_ACCOUNT() { return "preferredMerchantAccount"; }
+  static function PREFERRED_MERCHANT_ACCOUNT() { return "preferredMerchantAccount"; }  // cdltorre
+  static function PROCESSOR_3DS() { return "PROCESSOR3DS"; }
   static function REBILL_FREQUENCY() { return "rebillFrequency"; }
   static function REBILL_AMOUNT() { return "rebillAmount"; }
   static function REBILL_START() { return "rebillStart"; }
@@ -167,7 +173,10 @@ class GatewayRequest extends GatewayParameterList {
   static function REBILL_COUNT() { return "rebillCount"; }
   static function REBILL_SUSPEND() { return "rebillSuspend"; }
   static function REBILL_RESUME() { return "rebillResume"; }
+  static function REBILL_RESCHEDULE() { return "REBILLRESCHEDULE"; }
   static function REFERENCE_GUID() { return "referenceGUID"; }
+  static function REFERENCE_SCHEME_TRANSACTION_ID() { return "schemeTranId"; }
+  static function REFERENCE_SCHEME_SETTLEMENT_DATE() { return "schemeSettleDate"; }
   static function REFERRAL_NO() { return "referralNo"; }
   static function REFERRING_MERCHANT_ID() { return "referringMerchantID"; }
   static function REFERRED_CUSTOMER_ID() { return "referredCustomerID"; }
@@ -201,6 +210,19 @@ class GatewayRequest extends GatewayParameterList {
   static function _3DSECURE_DS_TRANSACTION_ID() { return "_3DSECURE_DS_TRANSACTION_ID"; }
   static function _3DSECURE_ACS_TRANSACTION_ID() { return "_3DSECURE_ACS_TRANSACTION_ID"; }
 
+  /*
+  Whether or not to request a challenge step-up flow from the ACS
+  01 - No preference
+  02 - No challenge requested
+  03 - Challenge requested (3DS Requestor Preference)
+  04 - Challenge requested (Mandate)
+  */
+  static function _3DSECURE_LOOKUP_CHALLENGE_INDICATOR(){ return "_3DSECURE_LOOKUP_CHALLENGE_INDICATOR"; }
+  
+  //This is  used to transmit whether or not a challenge was attempted to the ACS (TRUE/FALSE)
+  static function _3DSECURE_CHALLENGE_MANDATED_INDICATOR(){	return "_3DSECURE_CHALLENGE_MANDATED_INDICATOR"; }
+  
+
   static function FAILED_SERVER() { return "failedServer"; }
   static function FAILED_GUID() { return "failedGUID"; }
   static function FAILED_RESPONSE_CODE() { return "failedResponseCode"; }
@@ -220,6 +242,12 @@ class GatewayRequest extends GatewayParameterList {
   static function GATEWAY_URL() { return "gatewayURL"; }
   static function GATEWAY_CONNECT_TIMEOUT() { return "gatewayConnectTimeout"; }
   static function GATEWAY_READ_TIMEOUT() { return "gatewayReadTimeout"; }
+
+  static function FAILURE_URL() { return "FAILUREURL"; }
+  static function SUCCESS_URL() { return "SUCCESSURL"; }
+
+  static function MERCHANT_CASCADED_AUTH() { return "MERCHANTCASCADEDAUTH"; }
+
 }
 
 ?>

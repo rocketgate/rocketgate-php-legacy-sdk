@@ -87,6 +87,9 @@ define("GatewayCodes__REASON_AUTH_HAS_EXPIRED", 160);
 define("GatewayCodes__REASON_PREVIOUS_HARD_DECLINE", 161);
 define("GatewayCodes__REASON_MERCHACCT_LIMIT", 162);
 define("GatewayCodes__REASON_DECLINED_CAVV_AUTOVOID", 163);
+define("GatewayCodes__REASON_BANK_INVALID_TRANSACTION", 165);
+define("GatewayCodes__REASON_CVV2_REQUIRED", 167);
+define("GatewayCodes__REASON_INVALID_TAX_ID", 169);
 
 define("GatewayCodes__REASON_RISK_FAIL", 200);
 define("GatewayCodes__REASON_CUSTOMER_BLOCKED", 201);
@@ -114,6 +117,9 @@ define("GatewayCodes__REASON_TRIAL_ABUSE", 222);
 define("GatewayCodes__REASON_3DSECURE_BYPASS", 223);
 define("GatewayCodes__REASON_NEWCARD_NODEVICE", 224);
 define("GatewayCodes__REASON_3DSECURE_INITIATION", 225);
+define("GatewayCodes__REASON_3DSECURE_FRICTIONLESS_FAILED_AUTH", 227);
+define("GatewayCodes__REASON_3DSECURE_SCA_REQUIRED", 228);
+
 
 define("GatewayCodes__REASON_DNS_FAILURE", 300);
 define("GatewayCodes__REASON_UNABLE_TO_CONNECT", 301);
