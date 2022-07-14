@@ -174,6 +174,7 @@ class GatewayRequest extends GatewayParameterList {
   static function REBILL_SUSPEND() { return "rebillSuspend"; }
   static function REBILL_RESUME() { return "rebillResume"; }
   static function REBILL_RESCHEDULE() { return "REBILLRESCHEDULE"; }
+  static function REBILL_REACTIVATE() { return "REBILLREACTIVATE"; }
   static function REFERENCE_GUID() { return "referenceGUID"; }
   static function REFERENCE_SCHEME_TRANSACTION_ID() { return "schemeTranId"; }
   static function REFERENCE_SCHEME_SETTLEMENT_DATE() { return "schemeSettleDate"; }
