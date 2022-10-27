@@ -201,6 +201,8 @@ class GatewayResponse extends GatewayParameterList {
   static function _3DSECURE_CHALLENGE_MANDATED_INDICATOR() { return "_3DSECURE_CHALLENGE_MANDATED_INDICATOR"; }
   static function _3DSECURE_VERSTATUS() { return "_3DSECURE_VERSTATUS"; }
   static function _3DSECURE_LOOKUP_REFERENCE_GUID() { return "_3DSECURE_LOOKUP_REFERENCE_GUID"; }
+  static function UDF01() { return "UDF01"; }
+  static function UDF02() { return "UDF02"; }
 }
 
 ?>
