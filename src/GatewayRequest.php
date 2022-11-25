@@ -249,6 +249,12 @@ class GatewayRequest extends GatewayParameterList {
 
   static function MERCHANT_CASCADED_AUTH() { return "MERCHANTCASCADEDAUTH"; }
 
+  static function STYLE_SHEET() { return "STYLE_SHEET"; }
+
+  static function STYLE_SHEET2() { return "STYLE_SHEET2"; }
+
+  static function STYLE_SHEET3() { return "STYLE_SHEET3"; }
+
 }
 
 ?>
