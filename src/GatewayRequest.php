@@ -249,11 +249,11 @@ class GatewayRequest extends GatewayParameterList {
 
   static function MERCHANT_CASCADED_AUTH() { return "MERCHANTCASCADEDAUTH"; }
 
-  static function STYLE() { return "style"; }
+  static function STYLE_SHEET() { return "style"; }
 
-  static function STYLE2() { return "style2"; }
+  static function STYLE_SHEET2() { return "style2"; }
 
-  static function STYLE3() { return "style3"; }
+  static function STYLE_SHEET3() { return "style3"; }
 
 }
 
