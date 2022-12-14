@@ -255,6 +255,8 @@ class GatewayRequest extends GatewayParameterList {
 
   static function STYLE_SHEET3() { return "style3"; }
 
+  static function TRANSLATIONS() { return "translations"; }
+
 }
 
 ?>
