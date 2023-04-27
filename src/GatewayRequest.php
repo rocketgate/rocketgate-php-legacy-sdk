@@ -197,6 +197,7 @@ class GatewayRequest extends GatewayParameterList {
   static function USE_3D_SECURE() { return "use3DSecure"; }
   static function USERNAME() { return "username"; }
   static function XSELL_MERCHANT_ID() { return "xsellMerchantID"; }
+  static function XSELL_MERCHANT_ACCOUNT() { return "xsellMerchantAccount"; }
   static function XSELL_CUSTOMER_ID() { return "xsellCustomerID"; }
   static function XSELL_REFERENCE_XACT() { return "xsellReferenceXact"; }
   static function _3D_CHECK() { return "ThreeDCheck"; }
