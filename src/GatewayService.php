@@ -532,7 +532,8 @@ class GatewayService {
       if ($request->Get("gatewayServer") == NULL)
 	$request->Set("gatewayServer", $urlBits['host']);
       $request->Set("gatewayProtocol", $urlBits['scheme']);
-      $request->Set("gatewayPortNo", $urlBits['port']);
+      if (array_key_exists("port", $urlBits))
+        $request->Set("gatewayPortNo", $urlBits['port']);
       $request->Set("gatewayServlet", $urlBits['path'] . "?" . $urlBits['query']);
     }
 
