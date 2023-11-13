@@ -63,8 +63,6 @@ $request->Set(GatewayRequest::BILLING_STATE(), "NV");
 $request->Set(GatewayRequest::BILLING_ZIPCODE(), "89141");
 $request->Set(GatewayRequest::BILLING_COUNTRY(), "US");
 
-$request->Set(GatewayRequest::REFERRER_URL(), "https://local.rocketmerchant.com/php-sdk-legacy");
-
 // Risk/Scrub Request Setting
 $request->Set(GatewayRequest::SCRUB(), "IGNORE");
 $request->Set(GatewayRequest::CVV2_CHECK(), "IGNORE");
