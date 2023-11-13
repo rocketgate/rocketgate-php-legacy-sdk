@@ -257,6 +257,8 @@ class GatewayRequest extends GatewayParameterList {
 
   static function TRANSLATIONS() { return "translations"; }
 
+  static function REFERRER_URL() { return "referrerURL"; }
+
 }
 
 ?>
